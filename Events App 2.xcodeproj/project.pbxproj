@@ -12,6 +12,8 @@
 		FABB53202D630F30005F0190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB531F2D630F30005F0190 /* ViewController.swift */; };
 		FABB53252D630F32005F0190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABB53242D630F32005F0190 /* Assets.xcassets */; };
 		FABB53282D630F32005F0190 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FABB53272D630F32005F0190 /* Base */; };
+		FABB53322D63130A005F0190 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB53312D63130A005F0190 /* AppCoordinator.swift */; };
+		FABB53342D63141D005F0190 /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB53332D63141D005F0190 /* EventListCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FABB53242D630F32005F0190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABB53272D630F32005F0190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABB53292D630F32005F0190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABB53312D63130A005F0190 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FABB53332D63141D005F0190 /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		FABB531A2D630F30005F0190 /* Events App 2 */ = {
 			isa = PBXGroup;
 			children = (
+				FABB53302D6312F9005F0190 /* Coordinators */,
 				FABB531B2D630F30005F0190 /* AppDelegate.swift */,
 				FABB531D2D630F30005F0190 /* SceneDelegate.swift */,
 				FABB531F2D630F30005F0190 /* ViewController.swift */,
@@ -62,6 +67,15 @@
 				FABB53292D630F32005F0190 /* Info.plist */,
 			);
 			path = "Events App 2";
+			sourceTree = "<group>";
+		};
+		FABB53302D6312F9005F0190 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				FABB53312D63130A005F0190 /* AppCoordinator.swift */,
+				FABB53332D63141D005F0190 /* EventListCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABB53322D63130A005F0190 /* AppCoordinator.swift in Sources */,
 				FABB53202D630F30005F0190 /* ViewController.swift in Sources */,
 				FABB531C2D630F30005F0190 /* AppDelegate.swift in Sources */,
 				FABB531E2D630F30005F0190 /* SceneDelegate.swift in Sources */,
+				FABB53342D63141D005F0190 /* EventListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
