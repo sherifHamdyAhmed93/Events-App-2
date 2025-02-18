@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FABB531C2D630F30005F0190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB531B2D630F30005F0190 /* AppDelegate.swift */; };
 		FABB531E2D630F30005F0190 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB531D2D630F30005F0190 /* SceneDelegate.swift */; };
-		FABB53202D630F30005F0190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB531F2D630F30005F0190 /* ViewController.swift */; };
 		FABB53252D630F32005F0190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABB53242D630F32005F0190 /* Assets.xcassets */; };
 		FABB53282D630F32005F0190 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FABB53272D630F32005F0190 /* Base */; };
 		FABB53322D63130A005F0190 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB53312D63130A005F0190 /* AppCoordinator.swift */; };
@@ -17,13 +16,14 @@
 		FADC04B82D647D5500FF3865 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04B72D647D5500FF3865 /* UIColor + Extensions.swift */; };
 		FADC04BC2D647DB100FF3865 /* EventListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADC04BB2D647DB100FF3865 /* EventListVC.xib */; };
 		FADC04BD2D647DB100FF3865 /* EventListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04BA2D647DB100FF3865 /* EventListVC.swift */; };
+		FADC04C12D64865B00FF3865 /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADC04BF2D64865B00FF3865 /* EventsApp.xcdatamodeld */; };
+		FADC04C42D6486B400FF3865 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04C32D6486B400FF3865 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FABB53182D630F30005F0190 /* Events App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Events App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABB531B2D630F30005F0190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FABB531D2D630F30005F0190 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FABB531F2D630F30005F0190 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FABB53242D630F32005F0190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABB53272D630F32005F0190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABB53292D630F32005F0190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +32,8 @@
 		FADC04B72D647D5500FF3865 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
 		FADC04BA2D647DB100FF3865 /* EventListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListVC.swift; sourceTree = "<group>"; };
 		FADC04BB2D647DB100FF3865 /* EventListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventListVC.xib; sourceTree = "<group>"; };
+		FADC04C02D64865B00FF3865 /* EventsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsApp.xcdatamodel; sourceTree = "<group>"; };
+		FADC04C32D6486B400FF3865 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +66,15 @@
 		FABB531A2D630F30005F0190 /* Events App 2 */ = {
 			isa = PBXGroup;
 			children = (
+				FADC04C22D64869E00FF3865 /* Core Date */,
+				FADC04BE2D64804900FF3865 /* Core */,
 				FADC04B62D647D4000FF3865 /* Extensions */,
 				FABB53302D6312F9005F0190 /* Coordinators */,
 				FADC04B52D647D3700FF3865 /* Scenes */,
-				FABB531B2D630F30005F0190 /* AppDelegate.swift */,
-				FABB531D2D630F30005F0190 /* SceneDelegate.swift */,
-				FABB531F2D630F30005F0190 /* ViewController.swift */,
 				FABB53242D630F32005F0190 /* Assets.xcassets */,
 				FABB53262D630F32005F0190 /* LaunchScreen.storyboard */,
 				FABB53292D630F32005F0190 /* Info.plist */,
+				FADC04BF2D64865B00FF3865 /* EventsApp.xcdatamodeld */,
 			);
 			path = "Events App 2";
 			sourceTree = "<group>";
@@ -109,6 +111,23 @@
 				FADC04BB2D647DB100FF3865 /* EventListVC.xib */,
 			);
 			path = "Events List";
+			sourceTree = "<group>";
+		};
+		FADC04BE2D64804900FF3865 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FABB531B2D630F30005F0190 /* AppDelegate.swift */,
+				FABB531D2D630F30005F0190 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FADC04C22D64869E00FF3865 /* Core Date */ = {
+			isa = PBXGroup;
+			children = (
+				FADC04C32D6486B400FF3865 /* CoreDataManager.swift */,
+			);
+			path = "Core Date";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,12 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABB53322D63130A005F0190 /* AppCoordinator.swift in Sources */,
-				FABB53202D630F30005F0190 /* ViewController.swift in Sources */,
 				FABB531C2D630F30005F0190 /* AppDelegate.swift in Sources */,
 				FADC04B82D647D5500FF3865 /* UIColor + Extensions.swift in Sources */,
 				FADC04BD2D647DB100FF3865 /* EventListVC.swift in Sources */,
 				FABB531E2D630F30005F0190 /* SceneDelegate.swift in Sources */,
 				FABB53342D63141D005F0190 /* EventListCoordinator.swift in Sources */,
+				FADC04C42D6486B400FF3865 /* CoreDataManager.swift in Sources */,
+				FADC04C12D64865B00FF3865 /* EventsApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +431,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FADC04BF2D64865B00FF3865 /* EventsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FADC04C02D64865B00FF3865 /* EventsApp.xcdatamodel */,
+			);
+			currentVersion = FADC04C02D64865B00FF3865 /* EventsApp.xcdatamodel */;
+			name = EventsApp.xcdatamodeld;
+			path = "/Users/macbook/IOS/5 months Study/Concurrency/Projects/Events App 2/Events App 2/EventsApp.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FABB53102D630F30005F0190 /* Project object */;
 }

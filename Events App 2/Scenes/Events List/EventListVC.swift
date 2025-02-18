@@ -8,6 +8,7 @@
 import UIKit
 
 class EventListVC: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
