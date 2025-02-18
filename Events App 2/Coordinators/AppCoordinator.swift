@@ -12,9 +12,8 @@ protocol Coordinator{
     func start()
 }
 
-class AppCoordinator:Coordinator{
-    var childCoordinators: [Coordinator] = []
-    private(set) var navigationController:UINavigationController?
+final class AppCoordinator:Coordinator{
+    private(set) var childCoordinators: [Coordinator] = []
     private let window:UIWindow
 
     init(window:UIWindow){
@@ -22,7 +21,7 @@ class AppCoordinator:Coordinator{
     }
     
     func start() {
-        navigationController = UINavigationController()
+        let navigationController = UINavigationController()
         
         let eventListCoordinator = EventListCoordinator(navigationController: navigationController)
         eventListCoordinator.start()

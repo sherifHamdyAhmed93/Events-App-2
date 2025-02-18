@@ -9,15 +9,14 @@ import UIKit
 
 class EventListCoordinator:Coordinator{
     var childCoordinators: [Coordinator] = []
-    private(set) var navigationController:UINavigationController?
+    private let navigationController:UINavigationController
     
-    init(navigationController:UINavigationController?){
+    init(navigationController:UINavigationController){
         self.navigationController = navigationController
     }
     
     func start() {
-       let vc  = ViewController()
-        vc.view.backgroundColor = .blue
-        navigationController?.setViewControllers([vc], animated: true)
+       let vc  = EventListVC()
+        navigationController.setViewControllers([vc], animated: true)
     }
 }

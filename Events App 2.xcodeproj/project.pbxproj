@@ -14,6 +14,9 @@
 		FABB53282D630F32005F0190 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FABB53272D630F32005F0190 /* Base */; };
 		FABB53322D63130A005F0190 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB53312D63130A005F0190 /* AppCoordinator.swift */; };
 		FABB53342D63141D005F0190 /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB53332D63141D005F0190 /* EventListCoordinator.swift */; };
+		FADC04B82D647D5500FF3865 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04B72D647D5500FF3865 /* UIColor + Extensions.swift */; };
+		FADC04BC2D647DB100FF3865 /* EventListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADC04BB2D647DB100FF3865 /* EventListVC.xib */; };
+		FADC04BD2D647DB100FF3865 /* EventListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04BA2D647DB100FF3865 /* EventListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		FABB53292D630F32005F0190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABB53312D63130A005F0190 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FABB53332D63141D005F0190 /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
+		FADC04B72D647D5500FF3865 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		FADC04BA2D647DB100FF3865 /* EventListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListVC.swift; sourceTree = "<group>"; };
+		FADC04BB2D647DB100FF3865 /* EventListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventListVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,9 @@
 		FABB531A2D630F30005F0190 /* Events App 2 */ = {
 			isa = PBXGroup;
 			children = (
+				FADC04B62D647D4000FF3865 /* Extensions */,
 				FABB53302D6312F9005F0190 /* Coordinators */,
+				FADC04B52D647D3700FF3865 /* Scenes */,
 				FABB531B2D630F30005F0190 /* AppDelegate.swift */,
 				FABB531D2D630F30005F0190 /* SceneDelegate.swift */,
 				FABB531F2D630F30005F0190 /* ViewController.swift */,
@@ -76,6 +84,31 @@
 				FABB53332D63141D005F0190 /* EventListCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		FADC04B52D647D3700FF3865 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FADC04B92D647D8D00FF3865 /* Events List */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FADC04B62D647D4000FF3865 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FADC04B72D647D5500FF3865 /* UIColor + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FADC04B92D647D8D00FF3865 /* Events List */ = {
+			isa = PBXGroup;
+			children = (
+				FADC04BA2D647DB100FF3865 /* EventListVC.swift */,
+				FADC04BB2D647DB100FF3865 /* EventListVC.xib */,
+			);
+			path = "Events List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADC04BC2D647DB100FF3865 /* EventListVC.xib in Resources */,
 				FABB53252D630F32005F0190 /* Assets.xcassets in Resources */,
 				FABB53282D630F32005F0190 /* Base in Resources */,
 			);
@@ -151,6 +185,8 @@
 				FABB53322D63130A005F0190 /* AppCoordinator.swift in Sources */,
 				FABB53202D630F30005F0190 /* ViewController.swift in Sources */,
 				FABB531C2D630F30005F0190 /* AppDelegate.swift in Sources */,
+				FADC04B82D647D5500FF3865 /* UIColor + Extensions.swift in Sources */,
+				FADC04BD2D647DB100FF3865 /* EventListVC.swift in Sources */,
 				FABB531E2D630F30005F0190 /* SceneDelegate.swift in Sources */,
 				FABB53342D63141D005F0190 /* EventListCoordinator.swift in Sources */,
 			);
