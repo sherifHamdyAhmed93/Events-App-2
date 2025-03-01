@@ -77,6 +77,10 @@ class EventCell: UITableViewCell {
     }
     
     func configureCellData(eventCellModel:EventCellViewModel){
+        remainigTimeLabels.forEach {
+            $0.text = ""
+        }
+        
         eventNameLabel.text = eventCellModel.eventName
         dateLabel.text = eventCellModel.eventDate
         

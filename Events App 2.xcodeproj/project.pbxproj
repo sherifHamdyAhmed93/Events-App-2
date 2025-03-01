@@ -32,6 +32,7 @@
 		FADC04CE2D64A73500FF3865 /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04CD2D64A73500FF3865 /* AddEventViewModel.swift */; };
 		FADC04D02D64A8AD00FF3865 /* AddEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04CF2D64A8AD00FF3865 /* AddEventCoordinator.swift */; };
 		FAE11DA02D732C400007D135 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE11D9F2D732C400007D135 /* CacheManager.swift */; };
+		FAE11DA22D733A000007D135 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE11DA12D733A000007D135 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		FADC04CD2D64A73500FF3865 /* AddEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewModel.swift; sourceTree = "<group>"; };
 		FADC04CF2D64A8AD00FF3865 /* AddEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventCoordinator.swift; sourceTree = "<group>"; };
 		FAE11D9F2D732C400007D135 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		FAE11DA12D733A000007D135 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				FADC04B72D647D5500FF3865 /* UIColor + Extensions.swift */,
 				FA4551F62D70B1F10088CA78 /* UIView+Extensions.swift */,
 				FA4551F82D70B55D0088CA78 /* Date+Extensions.swift */,
+				FAE11DA12D733A000007D135 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				FADC04BD2D647DB100FF3865 /* EventListVC.swift in Sources */,
 				FABB531E2D630F30005F0190 /* SceneDelegate.swift in Sources */,
 				FADC04C92D64A6F900FF3865 /* AddEventVC.swift in Sources */,
+				FAE11DA22D733A000007D135 /* UIImage+Extension.swift in Sources */,
 				FADC04CE2D64A73500FF3865 /* AddEventViewModel.swift in Sources */,
 				FA4551F52D70AA8E0088CA78 /* EventCell.swift in Sources */,
 				FABB53342D63141D005F0190 /* EventListCoordinator.swift in Sources */,
