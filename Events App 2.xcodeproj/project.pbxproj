@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1DB3192D670E89003F4611 /* TitleSubtitleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DB3182D670E89003F4611 /* TitleSubtitleCellViewModel.swift */; };
+		FA1DB31C2D670F59003F4611 /* TitleSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DB31B2D670F59003F4611 /* TitleSubtitleCell.swift */; };
+		FA4551F22D70A9460088CA78 /* EventCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4551F12D70A9460088CA78 /* EventCellViewModel.swift */; };
+		FA4551F52D70AA8E0088CA78 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4551F42D70AA8E0088CA78 /* EventCell.swift */; };
+		FA4551F72D70B1F10088CA78 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4551F62D70B1F10088CA78 /* UIView+Extensions.swift */; };
+		FA4551F92D70B55D0088CA78 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4551F82D70B55D0088CA78 /* Date+Extensions.swift */; };
+		FAA3C5162D6D2BD800E510AC /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3C5152D6D2BD800E510AC /* ImagePickerCoordinator.swift */; };
+		FAA3C5192D6D2F8F00E510AC /* EventCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3C5182D6D2F8F00E510AC /* EventCellBuilder.swift */; };
 		FABB531C2D630F30005F0190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB531B2D630F30005F0190 /* AppDelegate.swift */; };
 		FABB531E2D630F30005F0190 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB531D2D630F30005F0190 /* SceneDelegate.swift */; };
 		FABB53252D630F32005F0190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABB53242D630F32005F0190 /* Assets.xcassets */; };
@@ -18,9 +26,23 @@
 		FADC04BD2D647DB100FF3865 /* EventListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04BA2D647DB100FF3865 /* EventListVC.swift */; };
 		FADC04C12D64865B00FF3865 /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADC04BF2D64865B00FF3865 /* EventsApp.xcdatamodeld */; };
 		FADC04C42D6486B400FF3865 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04C32D6486B400FF3865 /* CoreDataManager.swift */; };
+		FADC04C82D64A6F900FF3865 /* AddEventVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADC04C72D64A6F900FF3865 /* AddEventVC.xib */; };
+		FADC04C92D64A6F900FF3865 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04C62D64A6F900FF3865 /* AddEventVC.swift */; };
+		FADC04CC2D64A72900FF3865 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04CB2D64A72900FF3865 /* EventListViewModel.swift */; };
+		FADC04CE2D64A73500FF3865 /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04CD2D64A73500FF3865 /* AddEventViewModel.swift */; };
+		FADC04D02D64A8AD00FF3865 /* AddEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC04CF2D64A8AD00FF3865 /* AddEventCoordinator.swift */; };
+		FAE11DA02D732C400007D135 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE11D9F2D732C400007D135 /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA1DB3182D670E89003F4611 /* TitleSubtitleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCellViewModel.swift; sourceTree = "<group>"; };
+		FA1DB31B2D670F59003F4611 /* TitleSubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCell.swift; sourceTree = "<group>"; };
+		FA4551F12D70A9460088CA78 /* EventCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellViewModel.swift; sourceTree = "<group>"; };
+		FA4551F42D70AA8E0088CA78 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		FA4551F62D70B1F10088CA78 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		FA4551F82D70B55D0088CA78 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		FAA3C5152D6D2BD800E510AC /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
+		FAA3C5182D6D2F8F00E510AC /* EventCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellBuilder.swift; sourceTree = "<group>"; };
 		FABB53182D630F30005F0190 /* Events App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Events App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABB531B2D630F30005F0190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FABB531D2D630F30005F0190 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +56,12 @@
 		FADC04BB2D647DB100FF3865 /* EventListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventListVC.xib; sourceTree = "<group>"; };
 		FADC04C02D64865B00FF3865 /* EventsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsApp.xcdatamodel; sourceTree = "<group>"; };
 		FADC04C32D6486B400FF3865 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FADC04C62D64A6F900FF3865 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
+		FADC04C72D64A6F900FF3865 /* AddEventVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEventVC.xib; sourceTree = "<group>"; };
+		FADC04CB2D64A72900FF3865 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		FADC04CD2D64A73500FF3865 /* AddEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewModel.swift; sourceTree = "<group>"; };
+		FADC04CF2D64A8AD00FF3865 /* AddEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventCoordinator.swift; sourceTree = "<group>"; };
+		FAE11D9F2D732C400007D135 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +75,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1DB31A2D670F43003F4611 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA1DB31B2D670F59003F4611 /* TitleSubtitleCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA4551F32D70AA650088CA78 /* Event Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA4551F42D70AA8E0088CA78 /* EventCell.swift */,
+			);
+			path = "Event Cell";
+			sourceTree = "<group>";
+		};
+		FAA3C5172D6D2F7700E510AC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FAA3C5182D6D2F8F00E510AC /* EventCellBuilder.swift */,
+				FAE11D9F2D732C400007D135 /* CacheManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		FABB530F2D630F30005F0190 = {
 			isa = PBXGroup;
 			children = (
@@ -66,10 +119,12 @@
 		FABB531A2D630F30005F0190 /* Events App 2 */ = {
 			isa = PBXGroup;
 			children = (
-				FADC04C22D64869E00FF3865 /* Core Date */,
+				FAA3C5172D6D2F7700E510AC /* Utility */,
 				FADC04BE2D64804900FF3865 /* Core */,
 				FADC04B62D647D4000FF3865 /* Extensions */,
+				FADC04C22D64869E00FF3865 /* Core Date */,
 				FABB53302D6312F9005F0190 /* Coordinators */,
+				FADC04CA2D64A70E00FF3865 /* View Models */,
 				FADC04B52D647D3700FF3865 /* Scenes */,
 				FABB53242D630F32005F0190 /* Assets.xcassets */,
 				FABB53262D630F32005F0190 /* LaunchScreen.storyboard */,
@@ -84,6 +139,8 @@
 			children = (
 				FABB53312D63130A005F0190 /* AppCoordinator.swift */,
 				FABB53332D63141D005F0190 /* EventListCoordinator.swift */,
+				FADC04CF2D64A8AD00FF3865 /* AddEventCoordinator.swift */,
+				FAA3C5152D6D2BD800E510AC /* ImagePickerCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -92,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				FADC04B92D647D8D00FF3865 /* Events List */,
+				FADC04C52D64A6DD00FF3865 /* Add Event */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -100,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				FADC04B72D647D5500FF3865 /* UIColor + Extensions.swift */,
+				FA4551F62D70B1F10088CA78 /* UIView+Extensions.swift */,
+				FA4551F82D70B55D0088CA78 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -109,6 +169,7 @@
 			children = (
 				FADC04BA2D647DB100FF3865 /* EventListVC.swift */,
 				FADC04BB2D647DB100FF3865 /* EventListVC.xib */,
+				FA4551F32D70AA650088CA78 /* Event Cell */,
 			);
 			path = "Events List";
 			sourceTree = "<group>";
@@ -128,6 +189,27 @@
 				FADC04C32D6486B400FF3865 /* CoreDataManager.swift */,
 			);
 			path = "Core Date";
+			sourceTree = "<group>";
+		};
+		FADC04C52D64A6DD00FF3865 /* Add Event */ = {
+			isa = PBXGroup;
+			children = (
+				FADC04C62D64A6F900FF3865 /* AddEventVC.swift */,
+				FADC04C72D64A6F900FF3865 /* AddEventVC.xib */,
+				FA1DB31A2D670F43003F4611 /* Views */,
+			);
+			path = "Add Event";
+			sourceTree = "<group>";
+		};
+		FADC04CA2D64A70E00FF3865 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				FADC04CB2D64A72900FF3865 /* EventListViewModel.swift */,
+				FA4551F12D70A9460088CA78 /* EventCellViewModel.swift */,
+				FADC04CD2D64A73500FF3865 /* AddEventViewModel.swift */,
+				FA1DB3182D670E89003F4611 /* TitleSubtitleCellViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +273,7 @@
 				FADC04BC2D647DB100FF3865 /* EventListVC.xib in Resources */,
 				FABB53252D630F32005F0190 /* Assets.xcassets in Resources */,
 				FABB53282D630F32005F0190 /* Base in Resources */,
+				FADC04C82D64A6F900FF3865 /* AddEventVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,14 +284,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1DB31C2D670F59003F4611 /* TitleSubtitleCell.swift in Sources */,
+				FA4551F22D70A9460088CA78 /* EventCellViewModel.swift in Sources */,
 				FABB53322D63130A005F0190 /* AppCoordinator.swift in Sources */,
 				FABB531C2D630F30005F0190 /* AppDelegate.swift in Sources */,
 				FADC04B82D647D5500FF3865 /* UIColor + Extensions.swift in Sources */,
+				FADC04CC2D64A72900FF3865 /* EventListViewModel.swift in Sources */,
 				FADC04BD2D647DB100FF3865 /* EventListVC.swift in Sources */,
 				FABB531E2D630F30005F0190 /* SceneDelegate.swift in Sources */,
+				FADC04C92D64A6F900FF3865 /* AddEventVC.swift in Sources */,
+				FADC04CE2D64A73500FF3865 /* AddEventViewModel.swift in Sources */,
+				FA4551F52D70AA8E0088CA78 /* EventCell.swift in Sources */,
 				FABB53342D63141D005F0190 /* EventListCoordinator.swift in Sources */,
+				FA4551F72D70B1F10088CA78 /* UIView+Extensions.swift in Sources */,
+				FAE11DA02D732C400007D135 /* CacheManager.swift in Sources */,
+				FA4551F92D70B55D0088CA78 /* Date+Extensions.swift in Sources */,
+				FAA3C5192D6D2F8F00E510AC /* EventCellBuilder.swift in Sources */,
 				FADC04C42D6486B400FF3865 /* CoreDataManager.swift in Sources */,
 				FADC04C12D64865B00FF3865 /* EventsApp.xcdatamodeld in Sources */,
+				FADC04D02D64A8AD00FF3865 /* AddEventCoordinator.swift in Sources */,
+				FA1DB3192D670E89003F4611 /* TitleSubtitleCellViewModel.swift in Sources */,
+				FAA3C5162D6D2BD800E510AC /* ImagePickerCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,12 @@ import CoreData
 import UIKit
 
 class CoreDataManager{
+    
+    static let shared = CoreDataManager()
+    
+    private init(){}
+    
+    
     private let dataBaseName = "EventsApp"
     lazy var persistentContainer:NSPersistentContainer = {
        let container = NSPersistentContainer(name: dataBaseName)

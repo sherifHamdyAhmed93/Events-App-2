@@ -9,9 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventListVC" customModule="Events_App_2" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEventVC" customModule="Events_App_2" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="4Ro-wr-FWO" id="wKC-7R-3Jw"/>
+                <outlet property="tableView" destination="LCf-7a-VfY" id="fTB-Wg-AsG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4Ro-wr-FWO">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LCf-7a-VfY">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
@@ -28,12 +28,12 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Ro-wr-FWO" secondAttribute="trailing" id="9fv-Ma-yfd"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4Ro-wr-FWO" secondAttribute="bottom" id="Mfa-Ii-DGm"/>
-                <constraint firstItem="4Ro-wr-FWO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="epm-A5-TtR"/>
-                <constraint firstItem="4Ro-wr-FWO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iAk-UH-pNZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LCf-7a-VfY" secondAttribute="bottom" id="C6a-KP-X5J"/>
+                <constraint firstItem="LCf-7a-VfY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Lyq-xZ-1vQ"/>
+                <constraint firstItem="LCf-7a-VfY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="T4b-wm-WMi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LCf-7a-VfY" secondAttribute="trailing" id="wok-aZ-g5E"/>
             </constraints>
-            <point key="canvasLocation" x="95" y="20"/>
+            <point key="canvasLocation" x="140" y="20"/>
         </view>
     </objects>
     <resources>
