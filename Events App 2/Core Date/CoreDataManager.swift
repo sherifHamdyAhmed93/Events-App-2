@@ -45,6 +45,15 @@ class CoreDataManager{
         }
     }
     
+    func getEvent(id:NSManagedObjectID)->Event?{
+        do{
+            return try managedObjectContext.existingObject(with: id)  as? Event
+        }catch{
+            debugPrint("Error when try to retervie object")
+        }
+        return nil
+    }
+    
     func fetchEvents()->[Event]{
         let fetchRequest = NSFetchRequest<Event>(entityName: "Event")
         do{

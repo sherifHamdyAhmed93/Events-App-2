@@ -29,7 +29,11 @@ class EventListViewModel{
     func reloadData(){
         let events = CoreDataManager.shared.fetchEvents()
         cells = events.map({
-            Cell.event(EventCellViewModel(event: $0))
+            let eventCellViewModel = EventCellViewModel(event: $0)
+            eventCellViewModel.onSelect = { [weak self] id in
+                self?.coordinator.didSelectEvent(eventId: id)
+            }
+            return Cell.event(eventCellViewModel)
         })
         onUpdate()
     }
@@ -45,6 +49,13 @@ class EventListViewModel{
     
     func cellForRow(at indexPath:IndexPath)->Cell{
         return cells[indexPath.row]
+    }
+    
+    func didSelectRow(at indexpath:IndexPath){
+        switch cells[indexpath.row]{
+        case .event(let eventCellVM):
+            eventCellVM.selectEvent()
+        }
     }
     
 }

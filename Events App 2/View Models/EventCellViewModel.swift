@@ -7,10 +7,12 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class EventCellViewModel{
     private(set) var event:Event
     let currentDate = Date()
+    var onSelect:(NSManagedObjectID)->() = {_ in}
     
     var eventDate:String{
         let dateFormatter = DateFormatter()
@@ -23,29 +25,23 @@ class EventCellViewModel{
         return event.name ?? ""
     }
     
-    var remainingTime:[String]{
-        guard let eventDate = event.date else{return []}
-        return currentDate.remainingTime(toDate: eventDate).components(separatedBy: ",")
+    var timeRemaingViewModel:TimeRemainingViewModel?{
+        guard let eventDate = event.date else{return nil}
+        return TimeRemainingViewModel(mode: .cell, eventDate: eventDate)
     }
     
     init(event:Event){
         self.event = event
     }
     
-    
     func loadEventImage(completion:@escaping(_ image:UIImage?)->Void){
-        if let cachedImage =  CacheManager.shared.getObject(key: event.description) as? UIImage{
-            completion(cachedImage)
-        }else{
-            DispatchQueue.global().async {
-                guard let data = self.event.image , let eventImage = UIImage(data: data) else{
-                    completion(nil)
-                    return
-                }
-                CacheManager.shared.saveObject(key: self.event.description, object: eventImage)
-                completion(eventImage)
-            }
+        UIImage.loadEventImage(imageName: event.objectID.description, imageData: event.image) { image in
+            completion(image)
         }
+    }
+    
+    func selectEvent(){
+        onSelect(event.objectID)
     }
     
 }

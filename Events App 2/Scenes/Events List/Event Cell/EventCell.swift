@@ -10,7 +10,7 @@ import UIKit
 class EventCell: UITableViewCell {
     
     private var dateLabel:UILabel = UILabel()
-    private var remainigTimeLabels:[UILabel] = [UILabel(),UILabel(),UILabel(),UILabel()]
+    private var timeRemainingStackView = TimeRemainingStackView()
     private var eventBackgroundImageView:UIImageView = UIImageView()
     private var eventNameLabel:UILabel = UILabel()
     private var verticalStackView:UIStackView = UIStackView()
@@ -27,16 +27,14 @@ class EventCell: UITableViewCell {
     }
     
     private func setupSubviews(){
-        (remainigTimeLabels + [dateLabel,eventNameLabel,eventBackgroundImageView,verticalStackView]).forEach {
+        timeRemainingStackView.setup()
+        
+        [dateLabel,eventNameLabel,eventBackgroundImageView,verticalStackView].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
         
-        contentView.layer.cornerRadius = 10
         
-        remainigTimeLabels.forEach {
-            $0.font = .systemFont(ofSize: 28, weight: .medium)
-            $0.textColor = .white
-        }
+        contentView.layer.cornerRadius = 10
         
         dateLabel.font = .systemFont(ofSize: 18, weight: .medium)
         dateLabel.textColor = .white
@@ -44,9 +42,9 @@ class EventCell: UITableViewCell {
         eventNameLabel.font = .systemFont(ofSize: 28, weight: .bold)
         eventNameLabel.textColor = .white
         
-        verticalStackView.axis = .vertical
         verticalStackView.alignment = .trailing
-        
+        verticalStackView.axis  = .vertical
+                
         setupHierarchy()
         setupConstriants()
     }
@@ -55,7 +53,7 @@ class EventCell: UITableViewCell {
         contentView.addSubview(eventBackgroundImageView)
         contentView.addSubview(verticalStackView)
         
-        (remainigTimeLabels + [UIView(),dateLabel]).forEach {
+        [timeRemainingStackView,UIView(),dateLabel].forEach {
             verticalStackView.addArrangedSubview($0)
         }
         
@@ -77,16 +75,13 @@ class EventCell: UITableViewCell {
     }
     
     func configureCellData(eventCellModel:EventCellViewModel){
-        remainigTimeLabels.forEach {
-            $0.text = ""
+        if let timeRemaingViewModel = eventCellModel.timeRemaingViewModel{
+            timeRemainingStackView.setData(timeRemainingViewModel: timeRemaingViewModel)
         }
         
         eventNameLabel.text = eventCellModel.eventName
         dateLabel.text = eventCellModel.eventDate
         
-        eventCellModel.remainingTime.enumerated().forEach {
-            remainigTimeLabels[$0.offset].text = $0.element
-        }
         
         eventCellModel.loadEventImage { [weak self] image in
             DispatchQueue.main.async {

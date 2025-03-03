@@ -45,6 +45,7 @@ class EventListVC: UIViewController {
     
     private func setupTableView(){
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(EventCell.self, forCellReuseIdentifier: "EventCell")
     }
     
@@ -80,4 +81,10 @@ extension EventListVC:UITableViewDataSource{
     }
     
     
+}
+
+extension EventListVC:UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        vm.didSelectRow(at: indexPath)
+    }
 }
